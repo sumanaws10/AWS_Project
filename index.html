@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning AWS 101</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to AWS Learning 101</h1>
+        <p>Your interactive guide to Amazon Web Services</p>
+    </header>
+
+    <!-- Tabs for Content Navigation -->
+    <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'Services')">AWS Services</button>
+        <button class="tablinks" onclick="openTab(event, 'Quiz')">AWS Quiz</button>
+    </div>
+
+    <!-- Tab Content: AWS Services -->
+    <div id="Services" class="tabcontent">
+        <h2>Core AWS Services</h2>
+        <div class="card-container">
+            <div class="card" data-tooltip="Compute resources and more">
+                <h3>Amazon EC2</h3>
+                <p>Secure and resizable compute capacity.</p>
+            </div>
+            <div class="card" data-tooltip="Global object storage">
+                <h3>Amazon S3</h3>
+                <p>Scalable storage for any amount of data.</p>
+            </div>
+            <div class="card" data-tooltip="Managed database service">
+                <h3>Amazon RDS</h3>
+                <p>Relational database in the cloud.</p>
+            </div>
+            <div class="card" data-tooltip="Managed container service">
+                <h3>Amazon EKS</h3>
+                <p>Run Kubernetes without managing servers.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Content: AWS Quiz -->
+    <div id="Quiz" class="tabcontent">
+        <h2>Test Your AWS Knowledge</h2>
+        <div class="quiz-question">
+            <p>1. Which service is used for object storage in AWS?</p>
+            <button onclick="checkAnswer(this, 'correct')">Amazon S3</button>
+            <button onclick="checkAnswer(this, 'incorrect')">Amazon RDS</button>
+            <button onclick="checkAnswer(this, 'incorrect')">Amazon EC2</button>
+        </div>
+        <div class="quiz-question">
+            <p>2. Which AWS service is used for relational databases?</p>
+            <button onclick="checkAnswer(this, 'incorrect')">Amazon S3</button>
+            <button onclick="checkAnswer(this, 'correct')">Amazon RDS</button>
+            <button onclick="checkAnswer(this, 'incorrect')">Amazon Lambda</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
