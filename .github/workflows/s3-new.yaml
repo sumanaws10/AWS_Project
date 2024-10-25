@@ -25,4 +25,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.JJhDP/av7bIdxLMDpRxhqFj45c90n1ELwHhnu3VJ }}
           AWS_DEFAULT_REGION: eu-west-1  # Replace with your AWS region
         run: |
-          aws s3 sync . awsproject-bucket
+          aws s3 sync . s3://awsproject-bucket
