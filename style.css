@@ -85,17 +85,29 @@ body {
     cursor: pointer;
 }
 
-.quiz-question button:hover {
-    background-color: #4a90e2;
-    color: white;
+/* Default button styling */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+/* Styling for correct answer */
 .correct {
-    background-color: #4caf50;
-    color: white;
+    background-color: #4caf50 !important; /* Green color for correct answers */
+    color: white !important;
 }
 
+/* Styling for incorrect answer */
 .incorrect {
-    background-color: #f44336;
-    color: white;
+    background-color: #f44336 !important; /* Red color for incorrect answers */
+    color: white !important;
 }
+
+
+
+
