@@ -20,8 +20,8 @@ jobs:
 
       - name: Sync with S3
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AKIAX3DNHDUMSY5KDDOC }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.6uYqD4JJzaXR+kL6cWK37oMc2tniHNX4tQSfT2/X }}
           AWS_DEFAULT_REGION: eu-west-1  # Replace with your AWS region
         run: |
           aws s3 sync . s3://awsproject-bucket/
