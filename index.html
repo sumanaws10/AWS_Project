@@ -3,61 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning AWS 101</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My AWS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Welcome to AWS Learning Website 101</h1>
-        <p>Your interactive guide to AWS</p>
+    <header>
+        <h1>Suman Devi</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Tabs for Content Navigation -->
-    <div class="tabs">
-        <button class="tablinks" onclick="openTab(event, 'Services')">AWS Services</button>
-        <button class="tablinks" onclick="openTab(event, 'Quiz')">AWS Quiz</button>
-    </div>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/suman.jpeg" alt="My Profile Picture" class="profile-pic">
+            <p>Hello! I'm Suman Devi, an AWS enthusiast with a passion for cloud computing and architecture.</p>
+        </section>
 
-    <!-- Tab Content: AWS Services -->
-    <div id="Services" class="tabcontent">
-        <h2>Core AWS Services</h2>
-        <div class="card-container">
-            <div class="card" data-tooltip="Compute resources and more">
-                <h3>Amazon EC2</h3>
-                <p>Secure and resizable compute capacity.</p>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>AWS Certified Solutions Architect</li>
+                <li>Proficient in EC2, S3, RDS, Lambda</li>
+                <li>Experience with Terraform and CloudFormation</li>
+                <li>Strong programming skills in Python and JavaScript</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="AWS Web App">
+                    <div class="card-content">
+                        <h3>AWS Web App</h3>
+                        <p>Developed a scalable web application using AWS EC2 and S3. Implemented CI/CD pipeline using GitHub Actions.</p>
+                        <a href="https://github.com/example" target="_blank" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="project-card">
+                   
+                    <div class="card-content">
+                        <h3>Serverless Application</h3>
+                        <p>Built a serverless app using AWS Lambda and API Gateway, with DynamoDB for data storage.</p>
+                        <a href="https://github.com/example" target="_blank" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Data Analysis">
+                    <div class="card-content">
+                        <h3>Data Analysis</h3>
+                        <p>Built a serverless app using AWS Lambda and API Gateway, with DynamoDB for data storage.</p>
+                        <a href="https://github.com/example" target="_blank" class="btn">View on GitHub</a>
+                    </div>
+                </div>
             </div>
-            <div class="card" data-tooltip="Global object storage">
-                <h3>Amazon S3</h3>
-                <p>Scalable storage for any amount of data.</p>
-            </div>
-            <div class="card" data-tooltip="Managed database service">
-                <h3>Amazon RDS</h3>
-                <p>Relational database in the cloud.</p>
-            </div>
-            <div class="card" data-tooltip="Managed container service">
-                <h3>Amazon EKS</h3>
-                <p>Run Kubernetes without managing servers.</p>
-            </div>
-        </div>
-    </div>
+            
+        </section>
 
-    <!-- Tab Content: AWS Quiz -->
-    <div id="Quiz" class="tabcontent">
-        <h2>Test Your AWS Knowledge</h2>
-        <div class="quiz-question">
-            <p>1. Which service is used for object storage in AWS?</p>
-            <button onclick="checkAnswer(this, 'correct')">Amazon S3</button>
-            <button onclick="checkAnswer(this, 'incorrect')">Amazon RDS</button>
-            <button onclick="checkAnswer(this, 'incorrect')">Amazon EC2</button>
-        </div>
-        <div class="quiz-question">
-            <p>2. Which AWS service is used for relational databases?</p>
-            <button onclick="checkAnswer(this, 'incorrect')">Amazon S3</button>
-            <button onclick="checkAnswer(this, 'correct')">Amazon RDS</button>
-            <button onclick="checkAnswer(this, 'incorrect')">Amazon Lambda</button>
-        </div>
-    </div>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Worked as a Cloud Engineer at XYZ Company, focusing on AWS cloud services and architectures.</p>
+        </section>
+    <!-- Contact Me Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            
+            <form id="orderForm" method="get" action="https://cg3vt78bu7.execute-api.us-east-1.amazonaws.com/1">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+   
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <!-- Footer section -->
+    <footer>
+        <p>Connect with me on social media:</p>
+        <div class="social-links">   
+            <a href="https://www.linkedin.com/in/suman-devi-110b3271/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sumanaws10" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i></a>
+            <a href="mailto:sumanjhajhria07@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    
+    <!-- JavaScript to handle interactivity -->
+    <script>
+        // Placeholder script if you want to add interactive behaviors
+    </script>
+
 </body>
 </html>
